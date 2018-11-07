@@ -1,0 +1,2862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@SEMVG">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.11">
+    <root id="1">
+      <ServerVersion>11.2.0.2</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="CAME">
+      <ObjectId>49</ObjectId>
+      <IntrospectionTimestamp>2018-11-07.11:41:39</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>14</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="ORACLE_OCM">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>29</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="APPQOSSYS">
+      <ObjectId>30</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="ASISTENCIAS">
+      <ObjectId>48</ObjectId>
+      <IntrospectionTimestamp>2018-11-07.11:41:39</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-11-06.14:59:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:38</ModifiedTimestamp>
+      <CommentsHash>881052980495790</CommentsHash>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="20" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="21" parent="19" name="ACTIVIDADES_SEQ">
+      <ObjectId>20230</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:24</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:24</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="22" parent="19" name="ACTIVIDAD_CI_DET_SEQ">
+      <ObjectId>20228</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:22</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="23" parent="19" name="ACTIVIDAD_CI_SEQ">
+      <ObjectId>20229</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:23</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:23</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="24" parent="19" name="ALTERNANCIA_COMENTARIO_SEQ">
+      <ObjectId>20231</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:26</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:26</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="25" parent="19" name="ALTERNANCIA_DETALLE_SEQ">
+      <ObjectId>20232</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:27</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:27</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="26" parent="19" name="ALTERNANCIA_SEQ">
+      <ObjectId>20233</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:28</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:28</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="27" parent="19" name="ASISTENCIA_SEQ">
+      <ObjectId>20234</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:29</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:29</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="28" parent="19" name="AUDITORIA_SEQ">
+      <ObjectId>20235</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:30</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:30</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="29" parent="19" name="AULA_SEQ">
+      <ObjectId>20236</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:31</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:31</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="30" parent="19" name="CARRERA_SEQ">
+      <ObjectId>20237</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:32</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="31" parent="19" name="CULTIVOS_SEQ">
+      <ObjectId>20238</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:34</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:34</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="32" parent="19" name="EMPRESA_SEQ">
+      <ObjectId>20239</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:35</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="33" parent="19" name="EVALUACION_ACT_CRI_SEQ">
+      <ObjectId>20240</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:36</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:36</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="34" parent="19" name="EVALUACION_ACT_SEQ">
+      <ObjectId>20241</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:37</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:37</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="35" parent="19" name="EVALUACION_CRITERIO_SEQ">
+      <ObjectId>20242</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:38</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="36" parent="19" name="EVALUACION_DETALLE_SEQ">
+      <ObjectId>20243</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:39</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="37" parent="19" name="EVALUACION_HISTORIAL_SEQ">
+      <ObjectId>20244</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:40</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="38" parent="19" name="EVALUACION_SEQ">
+      <ObjectId>20245</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:41</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:41</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="39" parent="19" name="GRUPOEMPRESA_SEQ">
+      <ObjectId>20246</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:42</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="40" parent="19" name="GRUPO_SEQ">
+      <ObjectId>20247</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:43</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="41" parent="19" name="MONITOREO_CRITERIO_SEQ">
+      <ObjectId>20248</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:44</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:44</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="42" parent="19" name="MONITOREO_SEQ">
+      <ObjectId>20249</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:46</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="43" parent="19" name="MONITOR_SEQ">
+      <ObjectId>20250</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:47</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="44" parent="19" name="NUCLEOS_SEQ">
+      <ObjectId>20251</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:48</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="45" parent="19" name="PRACTICAS_SEQ">
+      <ObjectId>20252</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:49</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="46" parent="19" name="RECOMENDACION_CI_SEQ">
+      <ObjectId>20253</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:50</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="47" parent="19" name="RESPONSABLE_SEQ">
+      <ObjectId>20254</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:51</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:51</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="48" parent="19" name="TUTORIADO_SEQ">
+      <ObjectId>20255</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:52</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:52</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <sequence id="49" parent="19" name="USUARIOS_SEQ">
+      <ObjectId>20256</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.14:59:53</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <Ordered>1</Ordered>
+      <CacheSize>2</CacheSize>
+    </sequence>
+    <table id="50" parent="19" name="ACTIVIDADES">
+      <ObjectId>20259</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="51" parent="19" name="ACTIVIDAD_CI">
+      <ObjectId>20257</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:18</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="52" parent="19" name="ACTIVIDAD_CI_DET">
+      <ObjectId>20258</ObjectId>
+      <CreatedTimestamp>2018-11-06.14:59:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:28:27</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="53" parent="19" name="ALTERNANCIA">
+      <ObjectId>20260</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="54" parent="19" name="ALTERNANCIA_COMENTARIO">
+      <ObjectId>20261</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:01</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:27</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="55" parent="19" name="ALTERNANCIA_DETALLE">
+      <ObjectId>20262</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:03</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="56" parent="19" name="ALUMNO">
+      <ObjectId>20263</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:21</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="57" parent="19" name="ASISTENCIA">
+      <ObjectId>20264</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="58" parent="19" name="AUDITORIA">
+      <ObjectId>20265</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:07</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="59" parent="19" name="AULA">
+      <ObjectId>20266</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:08</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="60" parent="19" name="CARRERA">
+      <ObjectId>20267</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:58</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="61" parent="19" name="CULTIVOS">
+      <ObjectId>20268</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="62" parent="19" name="EMPRESA">
+      <ObjectId>20269</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:17</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="63" parent="19" name="EVALUACION">
+      <ObjectId>20270</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:13</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="64" parent="19" name="EVALUACION_ACT">
+      <ObjectId>20271</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:14</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:30:19</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="65" parent="19" name="EVALUACION_ACT_CRI">
+      <ObjectId>20272</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:16</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:20</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="66" parent="19" name="EVALUACION_CRITERIO">
+      <ObjectId>20273</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:52</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="67" parent="19" name="EVALUACION_DETALLE">
+      <ObjectId>20274</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:18</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="68" parent="19" name="EVALUACION_HISTORIAL">
+      <ObjectId>20275</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:19</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="69" parent="19" name="GRUPO">
+      <ObjectId>20276</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:20</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="70" parent="19" name="GRUPOEMPRESA">
+      <ObjectId>20277</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="71" parent="19" name="MONITOR">
+      <ObjectId>20278</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:23</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="72" parent="19" name="MONITOREO">
+      <ObjectId>20279</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:24</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="73" parent="19" name="MONITOREO_CRITERIO">
+      <ObjectId>20280</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:26</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:57</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="74" parent="19" name="NUCLEOS">
+      <ObjectId>20281</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:27</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="75" parent="19" name="PRACTICAS">
+      <ObjectId>20282</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:28</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:49</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="76" parent="19" name="RECOMENDACION_CI">
+      <ObjectId>20283</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:29</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:03</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="77" parent="19" name="RESPONSABLE">
+      <ObjectId>20284</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:30</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="78" parent="19" name="TUTORIADO">
+      <ObjectId>20285</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:31</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:12</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="79" parent="19" name="UBIGEO">
+      <ObjectId>20286</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:00:33</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <view id="80" parent="19" name="VW_ALTERNANCIAS">
+      <ObjectId>20222</ObjectId>
+      <SourceTextLength>865</SourceTextLength>
+      <DependsOnIds>20260,20262,20266,20267,20281,20282</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:00:34</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:20</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <view id="81" parent="19" name="VW_ALTERNANCIAS_ACTIVAS">
+      <ObjectId>20223</ObjectId>
+      <SourceTextLength>1016</SourceTextLength>
+      <DependsOnIds>20260,20262,20266,20267,20275,20281,20282</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:00:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:24</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <view id="82" parent="19" name="VW_ALTERNANCIAS_PENDIENTES">
+      <ObjectId>20224</ObjectId>
+      <SourceTextLength>811</SourceTextLength>
+      <DependsOnIds>20260,20262,20266,20267,20281,20282</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:00:36</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:27</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <view id="83" parent="19" name="VW_ALTERNANCIAS_PROFESOR">
+      <ObjectId>20225</ObjectId>
+      <SourceTextLength>960</SourceTextLength>
+      <DependsOnIds>20260,20262,20263,20266,20267,20276,20281,20282</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:00:37</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:30</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <view id="84" parent="19" name="VW_ASISTENCIAS">
+      <ObjectId>20226</ObjectId>
+      <SourceTextLength>1200</SourceTextLength>
+      <DependsOnIds>20259,20260,20262,20264,20268</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:00:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:35</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <view id="85" parent="19" name="VW_HAPPYBIRTHDAY">
+      <ObjectId>20227</ObjectId>
+      <SourceTextLength>1443</SourceTextLength>
+      <DependsOnIds>20263,20266,20267,20276,20350</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:00:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:38</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <routine id="86" parent="19" name="DESBLOQUEAR_ALUMNOS_AULAS">
+      <ObjectId>20343</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>580</SourceTextLength>
+      <DependsOnIds>20263,20266,4973,20276</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:35</ModifiedTimestamp>
+    </routine>
+    <routine id="87" parent="19" name="F_CAPITAL">
+      <ObjectId>20349</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <SourceTextLength>247</SourceTextLength>
+      <DependsOnIds>117</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:41</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:15</ModifiedTimestamp>
+    </routine>
+    <routine id="88" parent="19" name="F_EDAD">
+      <ObjectId>20350</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <SourceTextLength>250</SourceTextLength>
+      <DependsOnIds>20263,20352</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-07.11:41:38</ModifiedTimestamp>
+    </routine>
+    <routine id="89" parent="19" name="F_NUMERO_ORDEN">
+      <ObjectId>20351</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <SourceTextLength>566</SourceTextLength>
+      <DependsOnIds>20263,20276</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:44</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:44</ModifiedTimestamp>
+    </routine>
+    <routine id="90" parent="19" name="F_SYSDATE">
+      <ObjectId>20352</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <SourceTextLength>184</SourceTextLength>
+      <DependsOnIds>117</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:45</ModifiedTimestamp>
+    </routine>
+    <routine id="91" parent="19" name="F_TOTAL_HORAS">
+      <ObjectId>20353</ObjectId>
+      <RoutineKind>function</RoutineKind>
+      <SourceTextLength>1492</SourceTextLength>
+      <DependsOnIds>20266,20267,20260,20262,20264</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:46</ModifiedTimestamp>
+    </routine>
+    <routine id="92" parent="19" name="GENERAR_ASISTENCIAS">
+      <ObjectId>20344</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>840</SourceTextLength>
+      <DependsOnIds>4973,20264</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:36</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:36</ModifiedTimestamp>
+    </routine>
+    <routine id="93" parent="19" name="INABILITAR_ALUMNOS_AULA">
+      <ObjectId>20345</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>595</SourceTextLength>
+      <DependsOnIds>20263,20266,4973,20276</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:37</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:37</ModifiedTimestamp>
+    </routine>
+    <routine id="94" parent="19" name="INACTIVAR_ALTERNANCIA_DETALLE">
+      <ObjectId>20346</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>1012</SourceTextLength>
+      <DependsOnIds>20263,20277,4973,20276,20284,20262</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:38</ModifiedTimestamp>
+    </routine>
+    <routine id="95" parent="19" name="INACTIVAR_CRITERIOS_EVALUACION">
+      <ObjectId>20347</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>616</SourceTextLength>
+      <DependsOnIds>20273,4973</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:39</ModifiedTimestamp>
+    </routine>
+    <routine id="96" parent="19" name="LOGIN_REGISTRY">
+      <ObjectId>20348</ObjectId>
+      <RoutineKind>procedure</RoutineKind>
+      <SourceTextLength>422</SourceTextLength>
+      <DependsOnIds>20263,20265</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:40</ModifiedTimestamp>
+    </routine>
+    <column id="97" parent="50" name="CODACT">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="50" name="NOMACT">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="99" parent="50" name="COD_CAR">
+      <Position>3</Position>
+      <Comment>Codigo Carrera</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="100" parent="50" name="ESTACT">
+      <Position>4</Position>
+      <Comment>Estado</Comment>
+      <DataType>CHAR(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="101" parent="50" name="ACTIVIDADES_PK">
+      <ObjectId>20314</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:03:01</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:01</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODACT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="102" parent="50" name="ACTIVIDADES_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:09</ModifiedTimestamp>
+      <ColNames>CODACT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ACTIVIDADES_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="103" parent="50" name="ACT_CAR">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_CAR</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>CARRERA</RefTableName>
+      <RefKeyName>CARRERA_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="104" parent="50" name="ACTIVIDADES_TRG">
+      <ObjectId>20317</ObjectId>
+      <SourceTextLength>206</SourceTextLength>
+      <DependsOnIds>116,1255,20230</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:04</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="105" parent="51" name="CODACTCI">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="51" name="NOMACTCI">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(300 byte)|0s</DataType>
+    </column>
+    <column id="107" parent="51" name="ESTACTCI">
+      <Position>3</Position>
+      <Comment>Estado</Comment>
+      <DataType>CHAR(1 byte)|0s</DataType>
+    </column>
+    <index id="108" parent="51" name="ACTIVIDAD_CI_PK">
+      <ObjectId>20295</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:39</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODACTCI</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="109" parent="51" name="ACTIVIDAD_CI_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:18</ModifiedTimestamp>
+      <ColNames>CODACTCI</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ACTIVIDAD_CI_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="110" parent="51" name="ACTIVIDAD_CI_TRG">
+      <ObjectId>20316</ObjectId>
+      <SourceTextLength>199</SourceTextLength>
+      <DependsOnIds>116,20229,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:03</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:03</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="111" parent="52" name="CODACTCIDET">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="52" name="CODACTCI">
+      <Position>2</Position>
+      <Comment>Codigo de la Actividad de CI</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="113" parent="52" name="DESCACTCIDET">
+      <Position>3</Position>
+      <Comment>Descripcion</Comment>
+      <DataType>VARCHAR2(300 byte)|0s</DataType>
+    </column>
+    <column id="114" parent="52" name="CODALTDET">
+      <Position>4</Position>
+      <Comment>Codigo Alternancia Detalle</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="115" parent="52" name="ACTIVIDAD_CI_DET_PK">
+      <ObjectId>20293</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:37</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:37</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODACTCIDET</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="116" parent="52" name="ACTIVIDAD_CI_DET_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:06</ModifiedTimestamp>
+      <ColNames>CODACTCIDET</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ACTIVIDAD_CI_DET_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="117" parent="52" name="ACTCI_ACTCIDET">
+      <ModifiedTimestamp>2018-11-06.15:27:42</ModifiedTimestamp>
+      <ColNames>CODACTCI</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ACTIVIDAD_CI</RefTableName>
+      <RefKeyName>ACTIVIDAD_CI_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="118" parent="52" name="ACTCI_ALTDET">
+      <ModifiedTimestamp>2018-11-06.15:28:27</ModifiedTimestamp>
+      <ColNames>CODALTDET</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALTERNANCIA_DETALLE</RefTableName>
+      <RefKeyName>ALTERNANCIA_DETALLE_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="119" parent="52" name="ACTIVIDAD_CI_DET_TRG">
+      <ObjectId>20315</ObjectId>
+      <SourceTextLength>209</SourceTextLength>
+      <DependsOnIds>116,1255,20228</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:02</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="120" parent="53" name="CODALT">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="121" parent="53" name="CODPRA1">
+      <Position>2</Position>
+      <Comment>Codigo Semana 1</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="122" parent="53" name="CODPRA2">
+      <Position>3</Position>
+      <Comment>Codigo Semana 2</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="123" parent="53" name="CODNUC">
+      <Position>4</Position>
+      <Comment>Codigo Nucleo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="124" parent="53" name="COD_AULA">
+      <Position>5</Position>
+      <Comment>Codigo Aula</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="125" parent="53" name="ESTALT">
+      <Position>6</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="126" parent="53" name="ALTERNANCIA_PK">
+      <ObjectId>20307</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:53</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODALT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="127" parent="53" name="ALTERNANCIA_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:23</ModifiedTimestamp>
+      <ColNames>CODALT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ALTERNANCIA_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="128" parent="53" name="ALT_PRA1">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODPRA1</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>PRACTICAS</RefTableName>
+      <RefKeyName>PRACTICAS_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="129" parent="53" name="ALT_PRA2">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODPRA2</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>PRACTICAS</RefTableName>
+      <RefKeyName>PRACTICAS_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="130" parent="53" name="ALT_NUC">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODNUC</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>NUCLEOS</RefTableName>
+      <RefKeyName>NUCLEOS_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="131" parent="53" name="ALT_AUL">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_AULA</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>AULA</RefTableName>
+      <RefKeyName>TABLE1_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="132" parent="53" name="ALTERNANCIA_TRG">
+      <ObjectId>20320</ObjectId>
+      <SourceTextLength>202</SourceTextLength>
+      <DependsOnIds>116,1255,20233</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:07</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:08</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="133" parent="54" name="CODALTCOM">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="134" parent="54" name="COMALTCOM">
+      <Position>2</Position>
+      <Comment>Comentario</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="135" parent="54" name="TIPALTCOM">
+      <Position>3</Position>
+      <Comment>Tipo de Comentario(Monitor/Responsable)</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="136" parent="54" name="CODMON">
+      <Position>4</Position>
+      <Comment>Usuario(En caso de monitor quien comento)</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="137" parent="54" name="ALTERNANCIA_COMENTARIO_PK">
+      <ObjectId>20309</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:55</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:55</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODALTCOM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="138" parent="54" name="ALTERNANCIA_COMENTARIO_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:27</ModifiedTimestamp>
+      <ColNames>CODALTCOM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ALTERNANCIA_COMENTARIO_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="139" parent="54" name="ALTERNANCIA_COMENTARIO_TRG">
+      <ObjectId>20318</ObjectId>
+      <SourceTextLength>213</SourceTextLength>
+      <DependsOnIds>116,1255,20231</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:05</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="140" parent="55" name="CODALTDET">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="141" parent="55" name="CODALT">
+      <Position>2</Position>
+      <Comment>Codigo Alternancia</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="142" parent="55" name="COD_ALUM">
+      <Position>3</Position>
+      <Comment>DNI del Alumno</Comment>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="143" parent="55" name="COMALTDET">
+      <Position>4</Position>
+      <Comment>Comentarios del Monitor</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="144" parent="55" name="ESTALTDET">
+      <Position>5</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="145" parent="55" name="COD_RES">
+      <Position>6</Position>
+      <Comment>Codigo Responsable</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="146" parent="55" name="CODMON">
+      <Position>7</Position>
+      <Comment>Codigo Monitor</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="147" parent="55" name="FECMONITOREO">
+      <Position>8</Position>
+      <Comment>Fecha de Monitoreo</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="148" parent="55" name="OBSMONITOREO">
+      <Position>9</Position>
+      <Comment>observacion de Monitoreo</Comment>
+      <DataType>VARCHAR2(300 byte)|0s</DataType>
+    </column>
+    <index id="149" parent="55" name="ALTERNANCIA_DETALLE_PK">
+      <ObjectId>20300</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:45</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>CODALTDET</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="150" parent="55" name="ALTERNANCIA_DETALLE_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:51</ModifiedTimestamp>
+      <ColNames>CODALTDET</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ALTERNANCIA_DETALLE_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="151" parent="55" name="ALTDET_ALT">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODALT</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALTERNANCIA</RefTableName>
+      <RefKeyName>ALTERNANCIA_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="152" parent="55" name="ALTDET_ALU">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_ALUM</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALUMNO</RefTableName>
+      <RefKeyName>ALU_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="153" parent="55" name="ALTDET_RES">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_RES</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>RESPONSABLE</RefTableName>
+      <RefKeyName>RESPONSABLE_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="154" parent="55" name="ALTDET_MON">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODMON</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>MONITOR</RefTableName>
+      <RefKeyName>MONITOR_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="155" parent="55" name="ALTERNANCIA_DETALLE_TRG">
+      <ObjectId>20319</ObjectId>
+      <SourceTextLength>210</SourceTextLength>
+      <DependsOnIds>116,1255,20232</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:06</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="156" parent="56" name="COD_ALUM">
+      <Position>1</Position>
+      <Comment>DNI</Comment>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="157" parent="56" name="NOM_ALUM">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="158" parent="56" name="APE_ALUM">
+      <Position>3</Position>
+      <Comment>Apellido</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="159" parent="56" name="INGR_ALUM">
+      <Position>4</Position>
+      <Comment>Tipo Ingreso</Comment>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="160" parent="56" name="FCH_NAC_ALUM">
+      <Position>5</Position>
+      <Comment>Fecha de Nacimiento</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="161" parent="56" name="CORREO_ALUM">
+      <Position>6</Position>
+      <Comment>Correo</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="162" parent="56" name="TELF1_ALUM">
+      <Position>7</Position>
+      <Comment>Telefono</Comment>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+    </column>
+    <column id="163" parent="56" name="TELF2_ALUM">
+      <Position>8</Position>
+      <Comment>Celular</Comment>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+    </column>
+    <column id="164" parent="56" name="DIR_ORIG">
+      <Position>9</Position>
+      <Comment>Direccion de Origen</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="165" parent="56" name="REF_ORIG">
+      <Position>10</Position>
+      <Comment>Referencia de Origen</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="166" parent="56" name="DIR_ALUM">
+      <Position>11</Position>
+      <Comment>Direccion Actual</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="167" parent="56" name="REF_ALUM">
+      <Position>12</Position>
+      <Comment>Referencia Actual</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="168" parent="56" name="PWD_ALUM">
+      <Position>13</Position>
+      <Comment>Contraseña-defaul(demo)</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <DefaultExpression>&apos;fe01ce2a7fbac8fafaed7c982a04e229&apos;</DefaultExpression>
+    </column>
+    <column id="169" parent="56" name="BLOALUM">
+      <Position>14</Position>
+      <Comment>Bloqueo de Edicion</Comment>
+      <DataType>VARCHAR2(5 byte)|0s</DataType>
+      <DefaultExpression>&apos;true&apos;</DefaultExpression>
+    </column>
+    <index id="170" parent="56" name="ALU_PK">
+      <ObjectId>20290</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:33</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:33</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COD_ALUM</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="171" parent="56" name="ALU_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:21</ModifiedTimestamp>
+      <ColNames>COD_ALUM</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ALU_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="172" parent="57" name="COD_AS">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="173" parent="57" name="FCH_DIA">
+      <Position>2</Position>
+      <Comment>Fecha del Día</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="174" parent="57" name="HORA_ENT1">
+      <Position>3</Position>
+      <Comment>Hora de Entrada</Comment>
+      <DataType>TIMESTAMP(6)|0s</DataType>
+    </column>
+    <column id="175" parent="57" name="HORA_ENT2">
+      <Position>4</Position>
+      <DataType>TIMESTAMP(6)|0s</DataType>
+    </column>
+    <column id="176" parent="57" name="HORA_SAL1">
+      <Position>5</Position>
+      <Comment>Hora de Salida</Comment>
+      <DataType>TIMESTAMP(6)|0s</DataType>
+    </column>
+    <column id="177" parent="57" name="HORA_SAL2">
+      <Position>6</Position>
+      <DataType>TIMESTAMP(6)|0s</DataType>
+    </column>
+    <column id="178" parent="57" name="CODACT">
+      <Position>7</Position>
+      <Comment>Codigo Actividad</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="179" parent="57" name="CODCUL">
+      <Position>8</Position>
+      <Comment>Codigo Cultivo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="180" parent="57" name="DENDIA">
+      <Position>9</Position>
+      <Comment>Denominacion</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="181" parent="57" name="JUSTIFICACION">
+      <Position>10</Position>
+      <Comment>Justificacion</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="182" parent="57" name="CODALTDET">
+      <Position>11</Position>
+      <Comment>Codigo Alternancia Detalle</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="183" parent="57" name="SYS_C007132">
+      <ObjectId>20355</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-06.15:04:25</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:25</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COD_AS</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="184" parent="57" name="SYS_C007132">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-06.15:04:25</ModifiedTimestamp>
+      <ColNames>COD_AS</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007132</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="185" parent="57" name="ASI_ACT">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODACT</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ACTIVIDADES</RefTableName>
+      <RefKeyName>ACTIVIDADES_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="186" parent="57" name="ASI_CUL">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODCUL</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>CULTIVOS</RefTableName>
+      <RefKeyName>CULTIVOS_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="187" parent="57" name="ASI_ALTDET">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODALTDET</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALTERNANCIA_DETALLE</RefTableName>
+      <RefKeyName>ALTERNANCIA_DETALLE_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="188" parent="57" name="ASISTENCIA_TRG">
+      <ObjectId>20321</ObjectId>
+      <SourceTextLength>196</SourceTextLength>
+      <DependsOnIds>116,1255,20234</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:09</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="189" parent="58" name="CODMOV">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="190" parent="58" name="USUARIO">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="191" parent="58" name="EVENTO">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="192" parent="58" name="CODALT">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="193" parent="58" name="FECHA">
+      <Position>5</Position>
+      <DataType>TIMESTAMP(6)|0s</DataType>
+    </column>
+    <index id="194" parent="58" name="AUDITORIA_PK">
+      <ObjectId>20303</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:48</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODMOV</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="195" parent="58" name="AUDITORIA_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:54</ModifiedTimestamp>
+      <ColNames>CODMOV</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>AUDITORIA_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="196" parent="58" name="AUDITORIA_TRG">
+      <ObjectId>20322</ObjectId>
+      <SourceTextLength>200</SourceTextLength>
+      <DependsOnIds>116,1255,20235</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:10</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="197" parent="59" name="COD_AULA">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="198" parent="59" name="COD_CAR">
+      <Position>2</Position>
+      <Comment>Codigo Carrera</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="199" parent="59" name="SEC_AULA">
+      <Position>3</Position>
+      <Comment>Seccion</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="200" parent="59" name="SEM_AULA">
+      <Position>4</Position>
+      <Comment>Semestre</Comment>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="201" parent="59" name="YEAR_AULA">
+      <Position>5</Position>
+      <Comment>Año Actual</Comment>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="202" parent="59" name="EST_AULA">
+      <Position>6</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="203" parent="59" name="PRO_AULA">
+      <Position>7</Position>
+      <Comment>Año de Ingreso</Comment>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="204" parent="59" name="MES_AULA">
+      <Position>8</Position>
+      <Comment>Mes de Ingreso</Comment>
+      <DataType>VARCHAR2(6 byte)|0s</DataType>
+    </column>
+    <index id="205" parent="59" name="TABLE1_PK">
+      <ObjectId>20313</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:03:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COD_AULA</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="206" parent="59" name="TABLE1_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:32</ModifiedTimestamp>
+      <ColNames>COD_AULA</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>TABLE1_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="207" parent="59" name="AUL_CAR">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_CAR</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>CARRERA</RefTableName>
+      <RefKeyName>CARRERA_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="208" parent="59" name="AULA_TRG">
+      <ObjectId>20323</ObjectId>
+      <SourceTextLength>194</SourceTextLength>
+      <DependsOnIds>116,20236,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:11</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="209" parent="60" name="COD_CAR">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="210" parent="60" name="ABRCAR">
+      <Position>2</Position>
+      <Comment>Abrebiacion de la Carrera</Comment>
+      <DataType>VARCHAR2(2 byte)|0s</DataType>
+    </column>
+    <column id="211" parent="60" name="NAME_CAR">
+      <Position>3</Position>
+      <Comment>Nombre de la Carrera</Comment>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="212" parent="60" name="ABRMOD">
+      <Position>4</Position>
+      <Comment>Abrebiacion del Modulo</Comment>
+      <DataType>VARCHAR2(2 byte)|0s</DataType>
+    </column>
+    <column id="213" parent="60" name="MOD_CAR">
+      <Position>5</Position>
+      <Comment>Modulo de la Carrera</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="214" parent="60" name="YEAR_CAR">
+      <Position>6</Position>
+      <Comment>Año que entro en vigencia</Comment>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="215" parent="60" name="EST_CAR">
+      <Position>7</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="216" parent="60" name="ESTCUL">
+      <Position>8</Position>
+      <Comment>Usa cultivo(true/false)</Comment>
+      <DataType>VARCHAR2(5 byte)|0s</DataType>
+    </column>
+    <column id="217" parent="60" name="HORMOD">
+      <Position>9</Position>
+      <Comment>Cantidad de hora requerida</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="218" parent="60" name="CARRERA_PK">
+      <ObjectId>20302</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:47</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COD_CAR</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="219" parent="60" name="CARRERA_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:58</ModifiedTimestamp>
+      <ColNames>COD_CAR</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CARRERA_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="220" parent="60" name="CARRERA_TRG">
+      <ObjectId>20324</ObjectId>
+      <SourceTextLength>200</SourceTextLength>
+      <DependsOnIds>20237,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:12</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="221" parent="61" name="CODCUL">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="222" parent="61" name="NOMCUL">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="223" parent="61" name="ESTCUL">
+      <Position>3</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="224" parent="61" name="COD_CAR">
+      <Position>4</Position>
+      <Comment>Codigo Carrera</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="225" parent="61" name="CULTIVOS_PK">
+      <ObjectId>20310</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:56</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:56</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODCUL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="226" parent="61" name="CULTIVOS_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:14</ModifiedTimestamp>
+      <ColNames>CODCUL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CULTIVOS_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="227" parent="61" name="CUL_CAR">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_CAR</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>CARRERA</RefTableName>
+      <RefKeyName>CARRERA_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="228" parent="61" name="CULTIVOS_TRG">
+      <ObjectId>20325</ObjectId>
+      <SourceTextLength>203</SourceTextLength>
+      <DependsOnIds>20238,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:13</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:13</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="229" parent="62" name="COD_EMP">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="230" parent="62" name="NOM_EMP">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="231" parent="62" name="DOC_EMP">
+      <Position>3</Position>
+      <Comment>RUC/DNI</Comment>
+      <DataType>VARCHAR2(14 byte)|0s</DataType>
+    </column>
+    <column id="232" parent="62" name="EST_EMP">
+      <Position>4</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="233" parent="62" name="SYS_C007122">
+      <ObjectId>20354</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-11-06.15:04:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:04:17</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COD_EMP</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="234" parent="62" name="SYS_C007122">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-11-06.15:04:17</ModifiedTimestamp>
+      <ColNames>COD_EMP</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007122</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="235" parent="62" name="EMPRESA_TRG">
+      <ObjectId>20326</ObjectId>
+      <SourceTextLength>195</SourceTextLength>
+      <DependsOnIds>20239,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:14</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:14</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="236" parent="63" name="CODEVA">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="237" parent="63" name="CODGRU">
+      <Position>2</Position>
+      <Comment>Codigo Grupo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="238" parent="63" name="CODMON">
+      <Position>3</Position>
+      <Comment>Codigo Monitor</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="239" parent="63" name="CODALTDET">
+      <Position>4</Position>
+      <Comment>Codigo Alternancia Detalle</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="240" parent="63" name="ESTEVA">
+      <Position>5</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="241" parent="63" name="TARASIEVA">
+      <Position>6</Position>
+      <Comment>Tareas Asignadas</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="242" parent="63" name="FECEVA">
+      <Position>7</Position>
+      <Comment>Fecha de evaluacion</Comment>
+      <DataType>DATE|0s</DataType>
+      <DefaultExpression>SYSDATE</DefaultExpression>
+    </column>
+    <index id="243" parent="63" name="EVALUACION_PK">
+      <ObjectId>20292</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:35</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODEVA</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="244" parent="63" name="EVALUACION_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:48</ModifiedTimestamp>
+      <ColNames>CODEVA</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>EVALUACION_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="245" parent="63" name="EVA_GRU">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODGRU</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>GRUPO</RefTableName>
+      <RefKeyName>GRUPO_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="246" parent="63" name="EVA_ALTDET">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODALTDET</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALTERNANCIA_DETALLE</RefTableName>
+      <RefKeyName>ALTERNANCIA_DETALLE_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="247" parent="63" name="EVALUACION_TRG">
+      <ObjectId>20332</ObjectId>
+      <SourceTextLength>195</SourceTextLength>
+      <DependsOnIds>116,1255,20245</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:22</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:22</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="248" parent="64" name="CODEVAACT">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="249" parent="64" name="CODEVAACTCRI">
+      <Position>2</Position>
+      <Comment>Codigo Evaluacion Actitudinal Criterio</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="250" parent="64" name="NOTAEVAACT">
+      <Position>3</Position>
+      <Comment>Nota </Comment>
+      <DataType>CHAR(1 byte)|0s</DataType>
+    </column>
+    <column id="251" parent="64" name="CODALTDET">
+      <Position>4</Position>
+      <Comment>Codigo Alternancia Detalle</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="252" parent="64" name="EVALUACION_ACT_PK">
+      <ObjectId>20305</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:51</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:51</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODEVAACT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="253" parent="64" name="EVALUACION_ACT_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:10</ModifiedTimestamp>
+      <ColNames>CODEVAACT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>EVALUACION_ACT_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="254" parent="64" name="AVAACT_EVAACTCRI">
+      <ModifiedTimestamp>2018-11-06.15:30:19</ModifiedTimestamp>
+      <ColNames>CODEVAACTCRI</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>EVALUACION_ACT_CRI</RefTableName>
+      <RefKeyName>EVALUACION_ACT_CRI_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="255" parent="64" name="AVAACT_ALTDET">
+      <ModifiedTimestamp>2018-11-06.15:29:05</ModifiedTimestamp>
+      <ColNames>CODALTDET</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALTERNANCIA_DETALLE</RefTableName>
+      <RefKeyName>ALTERNANCIA_DETALLE_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="256" parent="64" name="EVALUACION_ACT_TRG">
+      <ObjectId>20328</ObjectId>
+      <SourceTextLength>203</SourceTextLength>
+      <DependsOnIds>116,1255,20241</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:17</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="257" parent="65" name="CODEVAACTCRI">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="258" parent="65" name="NOMEVAACTCRI">
+      <Position>2</Position>
+      <Comment>Nombre de la Evaluacion Actitudinal</Comment>
+      <DataType>VARCHAR2(300 byte)|0s</DataType>
+    </column>
+    <column id="259" parent="65" name="ESTEVAACTCRI">
+      <Position>3</Position>
+      <Comment>Estado</Comment>
+      <DataType>CHAR(1 byte)|0s</DataType>
+    </column>
+    <index id="260" parent="65" name="EVALUACION_ACT_CRI_PK">
+      <ObjectId>20289</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:32</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODEVAACTCRI</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="261" parent="65" name="EVALUACION_ACT_CRI_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:20</ModifiedTimestamp>
+      <ColNames>CODEVAACTCRI</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>EVALUACION_ACT_CRI_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="262" parent="65" name="EVALUACION_ACT_CRI_TRG">
+      <ObjectId>20327</ObjectId>
+      <SourceTextLength>213</SourceTextLength>
+      <DependsOnIds>116,20240,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:15</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:15</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="263" parent="66" name="CODEVACRI">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="264" parent="66" name="DESEVACRI">
+      <Position>2</Position>
+      <Comment>Descripción</Comment>
+      <DataType>VARCHAR2(300 byte)|0s</DataType>
+    </column>
+    <column id="265" parent="66" name="YEAREVACRI">
+      <Position>3</Position>
+      <Comment>Año</Comment>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="266" parent="66" name="SECEVACRI">
+      <Position>4</Position>
+      <Comment>Seccion</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="267" parent="66" name="SEMEVACRI">
+      <Position>5</Position>
+      <Comment>Semestre</Comment>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="268" parent="66" name="ESTADOCRI">
+      <Position>6</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="269" parent="66" name="COD_CAR">
+      <Position>7</Position>
+      <Comment>Codigo Carrera</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="270" parent="66" name="EVALUACION_CRITERIO_PK">
+      <ObjectId>20287</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:30</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:30</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODEVACRI</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="271" parent="66" name="EVALUACION_CRITERIO_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:52</ModifiedTimestamp>
+      <ColNames>CODEVACRI</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>EVALUACION_CRITERIO_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="272" parent="66" name="EVALUACION_CRITERIO_TRG">
+      <ObjectId>20329</ObjectId>
+      <SourceTextLength>210</SourceTextLength>
+      <DependsOnIds>116,1255,20242</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:19</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:19</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="273" parent="67" name="CODEVADET">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="274" parent="67" name="CODEVA">
+      <Position>2</Position>
+      <Comment>Codigo Evaluacion</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="275" parent="67" name="CODEVACRI">
+      <Position>3</Position>
+      <Comment>Codigo Evaluacion Criterio</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="276" parent="67" name="VALEVA">
+      <Position>4</Position>
+      <Comment>Valor Evaluacion</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="277" parent="67" name="EVALUACION_DETALLE_PK">
+      <ObjectId>20297</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:41</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:41</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODEVADET</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="278" parent="67" name="EVALUACION_DETALLE_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:29</ModifiedTimestamp>
+      <ColNames>CODEVADET</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>EVALUACION_DETALLE_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="279" parent="67" name="EVADET_EVA">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODEVA</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>EVALUACION</RefTableName>
+      <RefKeyName>EVALUACION_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="280" parent="67" name="EVADET_EVACRI">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODEVACRI</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>EVALUACION_CRITERIO</RefTableName>
+      <RefKeyName>EVALUACION_CRITERIO_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="281" parent="67" name="EVALUACION_DETALLE_TRG">
+      <ObjectId>20330</ObjectId>
+      <SourceTextLength>207</SourceTextLength>
+      <DependsOnIds>20243,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:20</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:20</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="282" parent="68" name="CODEVAHIS">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="283" parent="68" name="CODALT">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="284" parent="68" name="EVALUACION_HISTORIAL_PK">
+      <ObjectId>20294</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:38</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODEVAHIS</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="285" parent="68" name="EVALUACION_HISTORIAL_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:55</ModifiedTimestamp>
+      <ColNames>CODEVAHIS</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>EVALUACION_HISTORIAL_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="286" parent="68" name="EVAHIS_ALT">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>CODALT</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALTERNANCIA</RefTableName>
+      <RefKeyName>ALTERNANCIA_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="287" parent="68" name="EVALUACION_HISTORIAL_TRG">
+      <ObjectId>20331</ObjectId>
+      <SourceTextLength>209</SourceTextLength>
+      <DependsOnIds>116,1255,20244</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:21</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:21</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="288" parent="69" name="CODGRU">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="289" parent="69" name="COD_ALUM">
+      <Position>2</Position>
+      <Comment>Codigo Alumno</Comment>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="290" parent="69" name="COD_AULA">
+      <Position>3</Position>
+      <Comment>Codigo Aula</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="291" parent="69" name="ESTGRU">
+      <Position>4</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="292" parent="69" name="GRUPO_PK">
+      <ObjectId>20299</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODGRU</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="293" parent="69" name="GRUPO_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:30</ModifiedTimestamp>
+      <ColNames>CODGRU</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>GRUPO_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="294" parent="69" name="GRU_ALU">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>COD_ALUM</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALUMNO</RefTableName>
+      <RefKeyName>ALU_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="295" parent="69" name="GRU_AUL">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>COD_AULA</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>AULA</RefTableName>
+      <RefKeyName>TABLE1_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="296" parent="69" name="GRUPO_TRG">
+      <ObjectId>20334</ObjectId>
+      <SourceTextLength>200</SourceTextLength>
+      <DependsOnIds>116,1255,20247</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:25</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:25</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="297" parent="70" name="CODGRUEMP">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="298" parent="70" name="COD_RES">
+      <Position>2</Position>
+      <Comment>Codigo Responsable</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="299" parent="70" name="COD_ALUM">
+      <Position>3</Position>
+      <Comment>Codigo Alumno</Comment>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="300" parent="70" name="ESTGRUEMP">
+      <Position>4</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="301" parent="70" name="GRUPOEMPRESA_PK">
+      <ObjectId>20298</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:42</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODGRUEMP</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="302" parent="70" name="GRUPOEMPRESA_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:15</ModifiedTimestamp>
+      <ColNames>CODGRUEMP</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>GRUPOEMPRESA_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="303" parent="70" name="GRUEMP_RES">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_RES</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>RESPONSABLE</RefTableName>
+      <RefKeyName>RESPONSABLE_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="304" parent="70" name="GRUEMP_ALUM">
+      <ModifiedTimestamp>2018-11-06.15:18:59</ModifiedTimestamp>
+      <ColNames>COD_ALUM</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALUMNO</RefTableName>
+      <RefKeyName>ALU_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="305" parent="70" name="GRUPOEMPRESA_TRG">
+      <ObjectId>20333</ObjectId>
+      <SourceTextLength>209</SourceTextLength>
+      <DependsOnIds>20246,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:24</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:24</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="306" parent="71" name="CODMON">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="307" parent="71" name="NOMMON">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="308" parent="71" name="APEMON">
+      <Position>3</Position>
+      <Comment>Apellido</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="309" parent="71" name="DNIMON">
+      <Position>4</Position>
+      <Comment>DNI</Comment>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="310" parent="71" name="NACMON">
+      <Position>5</Position>
+      <Comment>Fecha Nacimiento</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="311" parent="71" name="CORMON">
+      <Position>6</Position>
+      <Comment>Correo</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="312" parent="71" name="CELMON">
+      <Position>7</Position>
+      <Comment>Celular</Comment>
+      <DataType>VARCHAR2(9 byte)|0s</DataType>
+    </column>
+    <column id="313" parent="71" name="DIRMON">
+      <Position>8</Position>
+      <Comment>Direccion</Comment>
+      <DataType>VARCHAR2(200 byte)|0s</DataType>
+    </column>
+    <column id="314" parent="71" name="CODUBI">
+      <Position>9</Position>
+      <Comment>Codigo Ubigeo</Comment>
+      <DataType>VARCHAR2(6 byte)|0s</DataType>
+    </column>
+    <column id="315" parent="71" name="COD_CAR">
+      <Position>10</Position>
+      <Comment>Codigo Carrera</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="316" parent="71" name="ESTMON">
+      <Position>11</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="317" parent="71" name="PASMON">
+      <Position>12</Position>
+      <Comment>Contraseña-default(vallegrande)</Comment>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+      <DefaultExpression>&apos;bbbcd599759bd0c6a485c3bacb477906&apos;</DefaultExpression>
+    </column>
+    <column id="318" parent="71" name="NIVMON">
+      <Position>13</Position>
+      <Comment>Nivel del Usuario</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <DefaultExpression>1</DefaultExpression>
+    </column>
+    <index id="319" parent="71" name="MONITOR_PK">
+      <ObjectId>20306</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:52</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:52</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODMON</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="320" parent="71" name="MONITOR_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:01</ModifiedTimestamp>
+      <ColNames>CODMON</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>MONITOR_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="321" parent="71" name="MOT_UBI">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>CODUBI</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>UBIGEO</RefTableName>
+      <RefKeyName>UBIGEO_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="322" parent="71" name="MOT_CAR">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>COD_CAR</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>CARRERA</RefTableName>
+      <RefKeyName>CARRERA_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="323" parent="71" name="MONITOR_TRG">
+      <ObjectId>20337</ObjectId>
+      <SourceTextLength>193</SourceTextLength>
+      <DependsOnIds>20250,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:28</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:28</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="324" parent="72" name="CODMONITOREO">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="325" parent="72" name="CODALTDET">
+      <Position>2</Position>
+      <Comment>Codigo Alternancia Detalle</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="326" parent="72" name="CODMONCRI">
+      <Position>3</Position>
+      <Comment>Codigo Monitoreo Criterio</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="327" parent="72" name="VALMONITOREO">
+      <Position>4</Position>
+      <Comment>Valor Monitoreo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="328" parent="72" name="ESTMONITOREO">
+      <Position>5</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="329" parent="72" name="MONITOREO_PK">
+      <ObjectId>20288</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:31</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:31</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODMONITOREO</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="330" parent="72" name="MONITOREO_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:33</ModifiedTimestamp>
+      <ColNames>CODMONITOREO</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>MONITOREO_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="331" parent="72" name="MON_ALTDET">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>CODALTDET</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>ALTERNANCIA_DETALLE</RefTableName>
+      <RefKeyName>ALTERNANCIA_DETALLE_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="332" parent="72" name="MON_MONCRI">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>CODMONCRI</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>MONITOREO_CRITERIO</RefTableName>
+      <RefKeyName>MONITOREO_CRITERIO_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="333" parent="72" name="MONITOREO_TRG">
+      <ObjectId>20336</ObjectId>
+      <SourceTextLength>206</SourceTextLength>
+      <DependsOnIds>116,1255,20249</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:27</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:27</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="334" parent="73" name="CODMONCRI">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="335" parent="73" name="NOMMONCRI">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="336" parent="73" name="ESTMONCRI">
+      <Position>3</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="337" parent="73" name="MONITOREO_CRITERIO_PK">
+      <ObjectId>20308</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:54</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODMONCRI</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="338" parent="73" name="MONITOREO_CRITERIO_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:57</ModifiedTimestamp>
+      <ColNames>CODMONCRI</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>MONITOREO_CRITERIO_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="339" parent="73" name="MONITOREO_CRITERIO_TRG">
+      <ObjectId>20335</ObjectId>
+      <SourceTextLength>209</SourceTextLength>
+      <DependsOnIds>20248,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:26</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:26</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="340" parent="74" name="CODNUC">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="341" parent="74" name="NOMNUC">
+      <Position>2</Position>
+      <Comment>Nombre</Comment>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="342" parent="74" name="CODNT">
+      <Position>3</Position>
+      <Comment>N° Nucleo</Comment>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="343" parent="74" name="CODALT">
+      <Position>4</Position>
+      <Comment>Clases o Practicas(C/P)</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="344" parent="74" name="ESTNUC">
+      <Position>5</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <column id="345" parent="74" name="COD_CAR">
+      <Position>6</Position>
+      <Comment>Codigo Carrera</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="346" parent="74" name="NUCLEOS_PK">
+      <ObjectId>20296</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODNUC</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="347" parent="74" name="NUCLEOS_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:04</ModifiedTimestamp>
+      <ColNames>CODNUC</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>NUCLEOS_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="348" parent="74" name="NUC_CAR">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>COD_CAR</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>CARRERA</RefTableName>
+      <RefKeyName>CARRERA_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="349" parent="74" name="NUCLEOS_TRG">
+      <ObjectId>20338</ObjectId>
+      <SourceTextLength>202</SourceTextLength>
+      <DependsOnIds>116,1255,20251</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:29</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:29</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="350" parent="75" name="COD_PRAC">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="351" parent="75" name="FCH_INI_PRAC">
+      <Position>2</Position>
+      <Comment>Fecha de Inicio de la Semana</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="352" parent="75" name="FCH_FIN_PRAC">
+      <Position>3</Position>
+      <Comment>Fecha del Fin de la Semana</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="353" parent="75" name="FCH_SYSTEM">
+      <Position>4</Position>
+      <Comment>Fecha de Creacion</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="354" parent="75" name="EST_PRAC">
+      <Position>5</Position>
+      <Comment>Estado</Comment>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="355" parent="75" name="PRACTICAS_PK">
+      <ObjectId>20311</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:57</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COD_PRAC</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="356" parent="75" name="PRACTICAS_PK">
+      <ModifiedTimestamp>2018-11-06.15:03:49</ModifiedTimestamp>
+      <ColNames>COD_PRAC</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PRACTICAS_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="357" parent="75" name="PRACTICAS_TRG">
+      <ObjectId>20339</ObjectId>
+      <SourceTextLength>199</SourceTextLength>
+      <DependsOnIds>20252,116,1255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:30</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:30</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="358" parent="76" name="CODRECCI">
+      <Position>1</Position>
+      <Comment>Codigo</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="359" parent="76" name="DESCRECCI">
+      <Position>2</Position>
+      <Comment>Descripcion</Comment>
+      <DataType>VARCHAR2(300 byte)|0s</DataType>
+    </column>
+    <column id="360" parent="76" name="FECRECCI">
+      <Position>3</Position>
+      <Comment>Fecha</Comment>
+      <DataType>DATE|0s</DataType>
+    </column>
+    <column id="361" parent="76" name="CONFMONRECCI">
+      <Position>4</Position>
+      <Comment>Conformidad Monitor</Comment>
+      <DataType>CHAR(1 byte)|0s</DataType>
+    </column>
+    <column id="362" parent="76" name="CONFALUMRECCI">
+      <Position>5</Position>
+      <Comment>Conformidad Alumno</Comment>
+      <DataType>CHAR(1 byte)|0s</DataType>
+    </column>
+    <column id="363" parent="76" name="CODALTDET">
+      <Position>6</Position>
+      <Comment>Codigo Alternancia Detalle</Comment>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <index id="364" parent="76" name="RECOMENDACION_CI_PK">
+      <ObjectId>20312</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODRECCI</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="365" parent="76" name="RECOMENDACION_CI_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:03</ModifiedTimestamp>
+      <ColNames>CODRECCI</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>RECOMENDACION_CI_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="366" parent="76" name="RECOMENDACION_CI_TRG">
+      <ObjectId>20340</ObjectId>
+      <SourceTextLength>203</SourceTextLength>
+      <DependsOnIds>116,1255,20253</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:31</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:31</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="367" parent="77" name="COD_RES">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="368" parent="77" name="DNI_RES">
+      <Position>2</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="369" parent="77" name="NOM_RES">
+      <Position>3</Position>
+      <DataType>VARCHAR2(150 byte)|0s</DataType>
+    </column>
+    <column id="370" parent="77" name="AREA_RES">
+      <Position>4</Position>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="371" parent="77" name="COD_EMP">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="372" parent="77" name="CEL_RES">
+      <Position>6</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="373" parent="77" name="TEL_RES">
+      <Position>7</Position>
+      <DataType>VARCHAR2(7 byte)|0s</DataType>
+    </column>
+    <column id="374" parent="77" name="EMAIL_RES">
+      <Position>8</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="375" parent="77" name="DIR_RES">
+      <Position>9</Position>
+      <DataType>VARCHAR2(80 byte)|0s</DataType>
+    </column>
+    <column id="376" parent="77" name="UBIGEO_RES">
+      <Position>10</Position>
+      <DataType>VARCHAR2(6 byte)|0s</DataType>
+    </column>
+    <column id="377" parent="77" name="EST_RES">
+      <Position>11</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="378" parent="77" name="CAR_RES">
+      <Position>12</Position>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <index id="379" parent="77" name="RESPONSABLE_PK">
+      <ObjectId>20301</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:46</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COD_RES</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="380" parent="77" name="RESPONSABLE_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:07</ModifiedTimestamp>
+      <ColNames>COD_RES</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>RESPONSABLE_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="381" parent="77" name="RES_EMP">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>COD_EMP</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>EMPRESA</RefTableName>
+      <RefKeyName>SYS_C007122</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="382" parent="77" name="RES_UBI">
+      <ModifiedTimestamp>2018-11-06.15:19:00</ModifiedTimestamp>
+      <ColNames>UBIGEO_RES</ColNames>
+      <RefSchemaName>ASISTENCIAS</RefSchemaName>
+      <RefTableName>UBIGEO</RefTableName>
+      <RefKeyName>UBIGEO_PK</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <trigger id="383" parent="77" name="RESPONSABLE_TRG">
+      <ObjectId>20341</ObjectId>
+      <SourceTextLength>204</SourceTextLength>
+      <DependsOnIds>116,1255,20254</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:32</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:32</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="384" parent="78" name="CODTUT">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="385" parent="78" name="COD_ALUM">
+      <Position>2</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="386" parent="78" name="CODMON">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="387" parent="78" name="ESTTUT">
+      <Position>4</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+      <DefaultExpression>&apos;A&apos;</DefaultExpression>
+    </column>
+    <index id="388" parent="78" name="TUTORIADO_PK">
+      <ObjectId>20291</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:34</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:34</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODTUT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="389" parent="78" name="TUTORIADO_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:12</ModifiedTimestamp>
+      <ColNames>CODTUT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>TUTORIADO_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="390" parent="78" name="TUTORIADO_TRG">
+      <ObjectId>20342</ObjectId>
+      <SourceTextLength>194</SourceTextLength>
+      <DependsOnIds>116,1255,20255</DependsOnIds>
+      <CreatedTimestamp>2018-11-06.15:03:34</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:03:34</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="391" parent="79" name="CODUBI">
+      <Position>1</Position>
+      <DataType>VARCHAR2(6 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="392" parent="79" name="DEPUBI">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="393" parent="79" name="PROUBI">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="394" parent="79" name="DISUBI">
+      <Position>4</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <index id="395" parent="79" name="UBIGEO_PK">
+      <ObjectId>20304</ObjectId>
+      <CreatedTimestamp>2018-11-06.15:02:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-11-06.15:02:49</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODUBI</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="396" parent="79" name="UBIGEO_PK">
+      <ModifiedTimestamp>2018-11-06.15:04:00</ModifiedTimestamp>
+      <ColNames>CODUBI</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UBIGEO_PK</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="397" parent="80" name="CODALT">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="398" parent="80" name="FCH_INI_PRAC">
+      <Position>2</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="399" parent="80" name="FCH_FIN_PRAC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="400" parent="80" name="CODNT">
+      <Position>4</Position>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="401" parent="80" name="NOMNUC">
+      <Position>5</Position>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="402" parent="80" name="NAME_CAR">
+      <Position>6</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="403" parent="80" name="SEM_AULA">
+      <Position>7</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="404" parent="80" name="SEC_AULA">
+      <Position>8</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="405" parent="80" name="ESTALT">
+      <Position>9</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="406" parent="80" name="ACTIVO">
+      <Position>10</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="407" parent="81" name="CODALT">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="408" parent="81" name="CODALTERNANCIA">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="409" parent="81" name="FCH_INI_PRAC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="410" parent="81" name="FCH_FIN_PRAC">
+      <Position>4</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="411" parent="81" name="CODNT">
+      <Position>5</Position>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="412" parent="81" name="NOMNUC">
+      <Position>6</Position>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="413" parent="81" name="NAME_CAR">
+      <Position>7</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="414" parent="81" name="SEM_AULA">
+      <Position>8</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="415" parent="81" name="SEC_AULA">
+      <Position>9</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="416" parent="81" name="ESTALT">
+      <Position>10</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="417" parent="81" name="COD_AULA">
+      <Position>11</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="418" parent="81" name="EVAL">
+      <Position>12</Position>
+      <DataType>CHAR(2 byte)|0s</DataType>
+    </column>
+    <column id="419" parent="82" name="CODALT">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="420" parent="82" name="CODALTERNANCIA">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="421" parent="82" name="FCH_INI_PRAC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="422" parent="82" name="FCH_FIN_PRAC">
+      <Position>4</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="423" parent="82" name="CODNT">
+      <Position>5</Position>
+      <DataType>VARCHAR2(4 byte)|0s</DataType>
+    </column>
+    <column id="424" parent="82" name="NOMNUC">
+      <Position>6</Position>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="425" parent="82" name="NAME_CAR">
+      <Position>7</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="426" parent="82" name="SEM_AULA">
+      <Position>8</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="427" parent="82" name="SEC_AULA">
+      <Position>9</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="428" parent="82" name="ESTALT">
+      <Position>10</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="429" parent="82" name="COD_AULA">
+      <Position>11</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="430" parent="83" name="CODALT">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="431" parent="83" name="CODALTERNANCIA">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="432" parent="83" name="FCH_INI_PRAC">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="433" parent="83" name="FCH_FIN_PRAC">
+      <Position>4</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="434" parent="83" name="COD_ALUM">
+      <Position>5</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="435" parent="83" name="CODNT">
+      <Position>6</Position>
+      <DataType>VARCHAR2(17 byte)|0s</DataType>
+    </column>
+    <column id="436" parent="83" name="NOMNUC">
+      <Position>7</Position>
+      <DataType>VARCHAR2(250 byte)|0s</DataType>
+    </column>
+    <column id="437" parent="83" name="ABRMOD">
+      <Position>8</Position>
+      <DataType>VARCHAR2(2 byte)|0s</DataType>
+    </column>
+    <column id="438" parent="84" name="COD_AS">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="439" parent="84" name="CODALT">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="440" parent="84" name="FCH_DIA">
+      <Position>3</Position>
+      <DataType>VARCHAR2(20 byte)|0s</DataType>
+    </column>
+    <column id="441" parent="84" name="HORA_ENT1">
+      <Position>4</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="442" parent="84" name="HORA_SAL1">
+      <Position>5</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="443" parent="84" name="HORA_ENT2">
+      <Position>6</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="444" parent="84" name="HORA_SAL2">
+      <Position>7</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="445" parent="84" name="DIA">
+      <Position>8</Position>
+      <DataType>VARCHAR2(36 byte)|0s</DataType>
+    </column>
+    <column id="446" parent="84" name="CODACT">
+      <Position>9</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="447" parent="84" name="NOMACT">
+      <Position>10</Position>
+      <DataType>VARCHAR2(100 byte)|0s</DataType>
+    </column>
+    <column id="448" parent="84" name="NOMCUL">
+      <Position>11</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="449" parent="84" name="CODCUL">
+      <Position>12</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="450" parent="84" name="DENDIA">
+      <Position>13</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="451" parent="84" name="DENOMINACION">
+      <Position>14</Position>
+      <DataType>VARCHAR2(14 byte)|0s</DataType>
+    </column>
+    <column id="452" parent="84" name="JUSTIFICACION">
+      <Position>15</Position>
+      <DataType>VARCHAR2(50 byte)|0s</DataType>
+    </column>
+    <column id="453" parent="84" name="ESTALT">
+      <Position>16</Position>
+      <DataType>VARCHAR2(1 byte)|0s</DataType>
+    </column>
+    <column id="454" parent="84" name="COD_ALUM">
+      <Position>17</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="455" parent="85" name="COD_ALUM">
+      <Position>1</Position>
+      <DataType>VARCHAR2(8 byte)|0s</DataType>
+    </column>
+    <column id="456" parent="85" name="EDAD">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+    </column>
+    <column id="457" parent="85" name="NOMBRE">
+      <Position>3</Position>
+      <DataType>VARCHAR2(101 byte)|0s</DataType>
+    </column>
+    <column id="458" parent="85" name="ABRCAR">
+      <Position>4</Position>
+      <DataType>VARCHAR2(2 byte)|0s</DataType>
+    </column>
+    <column id="459" parent="85" name="SEM_AULA">
+      <Position>5</Position>
+      <DataType>VARCHAR2(10 byte)|0s</DataType>
+    </column>
+    <column id="460" parent="85" name="DIA">
+      <Position>6</Position>
+      <DataType>VARCHAR2(2 byte)|0s</DataType>
+    </column>
+    <argument id="461" parent="86" name="CODIGOAULA">
+      <Position>1</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="462" parent="87">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="463" parent="87" name="TEXT">
+      <Position>1</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="464" parent="88">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="465" parent="88" name="CODALUMNO">
+      <Position>1</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="466" parent="89">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="467" parent="89" name="COD_ALUMNO">
+      <Position>1</Position>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="468" parent="89" name="CODIGO_AULA">
+      <Position>2</Position>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="469" parent="90">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>DATE|0s</DataType>
+    </argument>
+    <argument id="470" parent="91">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="471" parent="91" name="CODIGO_ALUMNO">
+      <Position>1</Position>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+    <argument id="472" parent="91" name="MOD_ABR">
+      <Position>2</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="473" parent="92" name="FECHAINICIO">
+      <Position>1</Position>
+      <DataType>DATE|0s</DataType>
+    </argument>
+    <argument id="474" parent="92" name="CODALTERNANCIADETALLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="475" parent="93" name="CODIGOAULA">
+      <Position>1</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="476" parent="94" name="CODIGOAULA">
+      <Position>1</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="477" parent="94" name="CODALTERNANCIA">
+      <Position>2</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="478" parent="95" name="YEAR_CRI">
+      <Position>1</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="479" parent="95" name="SEMESTRE_CRI">
+      <Position>2</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="480" parent="96" name="CODIGO">
+      <Position>1</Position>
+      <DataType>VARCHAR2|0s</DataType>
+    </argument>
+    <argument id="481" parent="96" name="ALTERNANCIA">
+      <Position>2</Position>
+      <DataType>NUMBER|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
