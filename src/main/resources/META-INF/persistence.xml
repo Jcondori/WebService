@@ -2,10 +2,11 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
 
     <persistence-unit name="WebServicePersistence">
-        <class>Model.CarreraEntity</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@sql.jcondori.com:1521:XE"/>-->
             <property name="javax.persistence.jdbc.user" value="Asistencias"/>
             <property name="javax.persistence.jdbc.password" value="vallegrande2018"/>
         </properties>
