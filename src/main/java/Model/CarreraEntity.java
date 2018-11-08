@@ -139,18 +139,4 @@ public class CarreraEntity {
         return result;
     }
 
-    @Override
-    public String toString() {
-        return "CarreraEntity{" +
-                "codCar=" + codCar +
-                ", abrcar='" + abrcar + '\'' +
-                ", nameCar='" + nameCar + '\'' +
-                ", abrmod='" + abrmod + '\'' +
-                ", modCar='" + modCar + '\'' +
-                ", yearCar='" + yearCar + '\'' +
-                ", estCar='" + estCar + '\'' +
-                ", estcul='" + estcul + '\'' +
-                ", hormod=" + hormod +
-                '}';
-    }
 }

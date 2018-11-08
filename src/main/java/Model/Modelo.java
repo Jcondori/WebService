@@ -42,12 +42,4 @@ public class Modelo {
         this.estado = estado;
     }
 
-    @Override
-    public String toString() {
-        return "Modelo{" +
-                "codigo=" + codigo +
-                ", nombre='" + nombre + '\'' +
-                ", estado='" + estado + '\'' +
-                '}';
-    }
 }
