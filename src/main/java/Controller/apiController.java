@@ -1,7 +1,5 @@
 package Controller;
 
-import Dao.EntidadDao;
-import Model.Carrera;
 import Model.CarreraEntity;
 import service.apiService;
 
@@ -20,10 +18,9 @@ import java.util.List;
 public class apiController extends Application {
 
     private apiService apiService = new apiService();
-    private EntidadDao dao = new EntidadDao();
 
     @GET
-    @Path("/mundo2")
+    @Path("/mundo")
     @Produces("application/json")
     public JsonArray getCarrera() {
 
@@ -35,23 +32,6 @@ public class apiController extends Application {
                     .add("codCar", obj.getCodCar())
                     .add("nameCar", obj.getNameCar())
                     .add("abrCar", obj.getAbrcar())
-            );
-        }
-        return builder.build();
-    }
-
-    @GET
-    @Path("/mundo")
-    @Produces("application/json")
-    public JsonArray getCarreraDao() throws Exception {
-        JsonArrayBuilder builder = Json.createArrayBuilder();
-
-        List<Carrera> lista = dao.listarCarrera();
-        for (Carrera obj : lista) {
-            builder.add(Json.createObjectBuilder()
-                    .add("codCar", obj.getCodigo())
-                    .add("nameCar", obj.getNombre())
-                    .add("abrCar", obj.getAbrebiacion())
             );
         }
         return builder.build();

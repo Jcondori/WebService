@@ -2,7 +2,6 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
 
     <persistence-unit name="WebServicePersistence">
-        <jta-data-source>jdbc/WebService</jta-data-source>
         <class>Model.CarreraEntity</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
@@ -11,5 +10,5 @@
             <property name="javax.persistence.jdbc.password" value="vallegrande2018"/>
         </properties>
     </persistence-unit>
-    
+
 </persistence>

@@ -3,7 +3,7 @@ package Model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "CARRERA", schema = "SEMVG", catalog = "")
+@Table(name = "CARRERA", schema = "Asistencias")
 public class CarreraEntity {
     private long codCar;
     private String abrcar;

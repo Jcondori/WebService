@@ -534,7 +534,7 @@
       <ObjectId>20343</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>580</SourceTextLength>
-      <DependsOnIds>20263,20266,4973,20276</DependsOnIds>
+      <DependsOnIds>4973,20263,20266,20276</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:35</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:35</ModifiedTimestamp>
     </routine>
@@ -574,7 +574,7 @@
       <ObjectId>20353</ObjectId>
       <RoutineKind>function</RoutineKind>
       <SourceTextLength>1492</SourceTextLength>
-      <DependsOnIds>20266,20267,20260,20262,20264</DependsOnIds>
+      <DependsOnIds>20260,20262,20264,20266,20267</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:46</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:46</ModifiedTimestamp>
     </routine>
@@ -590,7 +590,7 @@
       <ObjectId>20345</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>595</SourceTextLength>
-      <DependsOnIds>20263,20266,4973,20276</DependsOnIds>
+      <DependsOnIds>4973,20263,20266,20276</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:37</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:37</ModifiedTimestamp>
     </routine>
@@ -598,7 +598,7 @@
       <ObjectId>20346</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>1012</SourceTextLength>
-      <DependsOnIds>20263,20277,4973,20276,20284,20262</DependsOnIds>
+      <DependsOnIds>4973,20262,20263,20276,20277,20284</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:38</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:38</ModifiedTimestamp>
     </routine>
@@ -606,7 +606,7 @@
       <ObjectId>20347</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <SourceTextLength>616</SourceTextLength>
-      <DependsOnIds>20273,4973</DependsOnIds>
+      <DependsOnIds>4973,20273</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:39</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:39</ModifiedTimestamp>
     </routine>
@@ -706,7 +706,7 @@
     <trigger id="110" parent="51" name="ACTIVIDAD_CI_TRG">
       <ObjectId>20316</ObjectId>
       <SourceTextLength>199</SourceTextLength>
-      <DependsOnIds>116,20229,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20229</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:03</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:03</ModifiedTimestamp>
       <Events>I</Events>
@@ -1314,7 +1314,7 @@
     <trigger id="208" parent="59" name="AULA_TRG">
       <ObjectId>20323</ObjectId>
       <SourceTextLength>194</SourceTextLength>
-      <DependsOnIds>116,20236,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20236</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:11</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:11</ModifiedTimestamp>
       <Events>I</Events>
@@ -1385,7 +1385,7 @@
     <trigger id="220" parent="60" name="CARRERA_TRG">
       <ObjectId>20324</ObjectId>
       <SourceTextLength>200</SourceTextLength>
-      <DependsOnIds>20237,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20237</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:12</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:12</ModifiedTimestamp>
       <Events>I</Events>
@@ -1439,7 +1439,7 @@
     <trigger id="228" parent="61" name="CULTIVOS_TRG">
       <ObjectId>20325</ObjectId>
       <SourceTextLength>203</SourceTextLength>
-      <DependsOnIds>20238,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20238</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:13</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:13</ModifiedTimestamp>
       <Events>I</Events>
@@ -1487,7 +1487,7 @@
     <trigger id="235" parent="62" name="EMPRESA_TRG">
       <ObjectId>20326</ObjectId>
       <SourceTextLength>195</SourceTextLength>
-      <DependsOnIds>20239,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20239</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:14</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:14</ModifiedTimestamp>
       <Events>I</Events>
@@ -1584,7 +1584,7 @@
     </column>
     <column id="250" parent="64" name="NOTAEVAACT">
       <Position>3</Position>
-      <Comment>Nota </Comment>
+      <Comment>Nota</Comment>
       <DataType>CHAR(1 byte)|0s</DataType>
     </column>
     <column id="251" parent="64" name="CODALTDET">
@@ -1666,7 +1666,7 @@
     <trigger id="262" parent="65" name="EVALUACION_ACT_CRI_TRG">
       <ObjectId>20327</ObjectId>
       <SourceTextLength>213</SourceTextLength>
-      <DependsOnIds>116,20240,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20240</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:15</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:15</ModifiedTimestamp>
       <Events>I</Events>
@@ -1788,7 +1788,7 @@
     <trigger id="281" parent="67" name="EVALUACION_DETALLE_TRG">
       <ObjectId>20330</ObjectId>
       <SourceTextLength>207</SourceTextLength>
-      <DependsOnIds>20243,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20243</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:20</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:20</ModifiedTimestamp>
       <Events>I</Events>
@@ -1953,7 +1953,7 @@
     <trigger id="305" parent="70" name="GRUPOEMPRESA_TRG">
       <ObjectId>20333</ObjectId>
       <SourceTextLength>209</SourceTextLength>
-      <DependsOnIds>20246,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20246</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:24</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:24</ModifiedTimestamp>
       <Events>I</Events>
@@ -2062,7 +2062,7 @@
     <trigger id="323" parent="71" name="MONITOR_TRG">
       <ObjectId>20337</ObjectId>
       <SourceTextLength>193</SourceTextLength>
-      <DependsOnIds>20250,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20250</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:28</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:28</ModifiedTimestamp>
       <Events>I</Events>
@@ -2170,7 +2170,7 @@
     <trigger id="339" parent="73" name="MONITOREO_CRITERIO_TRG">
       <ObjectId>20335</ObjectId>
       <SourceTextLength>209</SourceTextLength>
-      <DependsOnIds>20248,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20248</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:26</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:26</ModifiedTimestamp>
       <Events>I</Events>
@@ -2285,7 +2285,7 @@
     <trigger id="357" parent="75" name="PRACTICAS_TRG">
       <ObjectId>20339</ObjectId>
       <SourceTextLength>199</SourceTextLength>
-      <DependsOnIds>20252,116,1255</DependsOnIds>
+      <DependsOnIds>116,1255,20252</DependsOnIds>
       <CreatedTimestamp>2018-11-06.15:03:30</CreatedTimestamp>
       <ModifiedTimestamp>2018-11-06.15:03:30</ModifiedTimestamp>
       <Events>I</Events>
