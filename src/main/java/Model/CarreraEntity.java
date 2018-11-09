@@ -138,5 +138,4 @@ public class CarreraEntity {
         result = 31 * result + (hormod != null ? hormod.hashCode() : 0);
         return result;
     }
-
 }

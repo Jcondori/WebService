@@ -16,11 +16,6 @@
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.github.noraui</groupId>
-            <artifactId>ojdbc7</artifactId>
-            <version>12.1.0.2</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -28,27 +23,18 @@
             <version>2.8.5</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-server -->
-        <dependency>
-            <groupId>org.glassfish.jersey.core</groupId>
-            <artifactId>jersey-server</artifactId>
-            <version>2.27</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.glassfish.jersey.core</groupId>-->
+            <!--<artifactId>jersey-server</artifactId>-->
+            <!--<version>2.27</version>-->
+        <!--</dependency>-->
         <!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-json -->
-        <dependency>
-            <groupId>com.sun.jersey</groupId>
-            <artifactId>jersey-json</artifactId>
-            <version>1.19.4</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.sun.jersey</groupId>-->
+            <!--<artifactId>jersey-json</artifactId>-->
+            <!--<version>1.19.4</version>-->
+        <!--</dependency>-->
     </dependencies>
-
-    <repositories>
-        <repository>
-            <url>http://nexus.saas.hand-china.com/content/repositories/rdc/</url>
-            <id>oracle</id>
-            <layout>default</layout>
-            <name>Oracle Driver JDBC</name>
-        </repository>
-    </repositories>
 
     <build>
         <finalName>WebService</finalName>

@@ -2,6 +2,7 @@ package Controller;
 
 import Model.CarreraEntity;
 import Model.Modelo;
+import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import service.apiService;
 
@@ -22,7 +23,15 @@ public class apiController extends Application {
     public List<CarreraEntity> getCarrera() {
 
         return apiService.listaCarreras();
-//        return new Gson().toJson(lista);
+
+    }
+
+    @GET
+    @Path("/lista2")
+    @Produces("application/json")
+    public String getCarreraGson() {
+
+        return new Gson().toJson(apiService.listaCarreras());
 
     }
 
@@ -49,11 +58,14 @@ public class apiController extends Application {
 
     }
 
+    //Motodo que recibe y debuelve un json clase Modelo
     @POST
     @Path("objeto2")
+    @Consumes("application/json")
     @Produces("application/json")
-    public String postMethod() {
-        return "Post a tu Servicio";
+    public Modelo postMethod(Modelo modelo) {
+        System.out.println(modelo);
+        return modelo;
     }
 
 }
